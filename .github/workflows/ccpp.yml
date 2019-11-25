@@ -10,8 +10,6 @@ jobs:
     runs-on: ubuntu-16.04
     steps:
     - uses: actions/checkout@v1
-    - name: install dependency
-      run: sudo apt-get -y install build-essential subversion git-core libncurses5-dev zlib1g-dev gawk flex quilt libssl-dev xsltproc libxml-parser-perl mercurial bzr ecj cvs unzip
     - name: update subdependency
       run: ./scripts/feeds update -a 
     - name: install subdependency
