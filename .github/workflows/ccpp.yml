@@ -15,5 +15,5 @@ jobs:
     - name: install subdependency
       run: ./scripts/feeds install -a
     - name: config menu
-      run: echo config ...
+      run: make -j1 V=s
 
