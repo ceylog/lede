@@ -214,3 +214,9 @@ jobs:
         with:
           name: OpenWrt firmware
           path: bin/targets
+
+      - name : Upload config
+        uses: actions/upload-artifact@master
+        with:
+          name: configFile
+          path: ./.comfig
