@@ -219,4 +219,4 @@ jobs:
         uses: actions/upload-artifact@master
         with:
           name: configFile
-          path: ./.comfig
+          path: ./.config
